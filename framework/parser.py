@@ -1,8 +1,10 @@
-from utils.types import Object
+from _types import Object
 from grammar import Rule
 
 
 class Parser(Object):
+	__slots__ = ('rules', )
+
 	def __init__(self):
 		self.rules = []
 
